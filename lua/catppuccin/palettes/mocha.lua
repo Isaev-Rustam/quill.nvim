@@ -7,7 +7,7 @@ return {
 	pink = "#f0abfc", -- регулярные выражения, escape-символы, Special
 	mauve = "#bd93f9", -- ключевые слова (if, else, function, return и т.п.)
 	red = "#ff5555", -- ошибки, CurSearch, удалённые строки в diff
-	maroon = "#f28c61", -- параметры функций
+	maroon = "#e7e5e4", -- параметры функций
 	peach = "#f28c61", -- константы, числа, встроенные функции
 	yellow = "#fdba74", -- типы данных, предупреждения (warnings)
 	green = "#cff486", -- строки, добавленные строки в diff
@@ -33,4 +33,3 @@ return {
 	mantle = "#292524", -- фон статуслайна, floating окон, панелей
 	crust = "#0c0a09", -- самый тёмный: SignColumnSB, TabLine, разделители окон
 }
-

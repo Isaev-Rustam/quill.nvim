@@ -14,7 +14,7 @@ return {
 	teal = "#5eead4", -- символы, hints (подсказки), режим INSERT
 	sky = "#8be9fd", -- операторы, поиск (Search/IncSearch), информация
 	sapphire = "#6272a4", -- метки (labels), preprocessor
-	blue = "#a78bfa", -- функции, заголовки, HTML-теги, директории
+	blue = "#f28c61", -- функции, заголовки, HTML-теги, директории
 	lavender = "#a78bfa", -- номер текущей строки (CursorLineNr), UI акценты
 
 	-- ТЕКСТОВАЯ ШКАЛА

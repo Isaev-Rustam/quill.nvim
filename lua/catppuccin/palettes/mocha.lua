@@ -7,14 +7,14 @@ return {
 	pink = "#f0abfc", -- регулярные выражения, escape-символы, Special
 	mauve = "#bd93f9", -- ключевые слова (if, else, function, return и т.п.)
 	red = "#ff5555", -- ошибки, CurSearch, удалённые строки в diff
-	maroon = "#e7e5e4", -- параметры функций
-	peach = "#e7e5e4", -- константы, числа, встроенные функции
+	maroon = "#f28c61", -- параметры функций
+	peach = "#f28c61", -- константы, числа, встроенные функции
 	yellow = "#fdba74", -- типы данных, предупреждения (warnings)
 	green = "#cff486", -- строки, добавленные строки в diff
 	teal = "#5eead4", -- символы, hints (подсказки), режим INSERT
 	sky = "#8be9fd", -- операторы, поиск (Search/IncSearch), информация
 	sapphire = "#6272a4", -- метки (labels), preprocessor
-	blue = "#f28c61", -- функции, заголовки, HTML-теги, директории
+	blue = "#a78bfa", -- функции, заголовки, HTML-теги, директории
 	lavender = "#a78bfa", -- номер текущей строки (CursorLineNr), UI акценты
 
 	-- ТЕКСТОВАЯ ШКАЛА

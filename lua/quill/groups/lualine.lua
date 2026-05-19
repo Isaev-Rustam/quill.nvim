@@ -1,11 +1,11 @@
--- lua/vague/groups/lualine.lua
+-- lua/quill/groups/lualine.lua
 
 -- Цветовая схема для lualine.nvim — статусной строки.
 -- Здесь определяются цвета для разных режимов редактора.
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

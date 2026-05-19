@@ -1,11 +1,11 @@
--- lua/vague/groups/common.lua
+-- lua/quill/groups/common.lua
 
 -- Основные highlight-группы Neovim (самые важные и часто используемые).
 -- Это фундаментальная подсветка интерфейса редактора.
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

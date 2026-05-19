@@ -1,10 +1,10 @@
--- lua/vague/groups/neotree.lua
+-- lua/quill/groups/neotree.lua
 
 -- Подсветка для плагина neo-tree (файловый менеджер).
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

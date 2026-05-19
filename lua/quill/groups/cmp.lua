@@ -1,10 +1,10 @@
--- lua/vague/groups/cmp.lua
+-- lua/quill/groups/cmp.lua
 
 -- Подсветка для nvim-cmp — классического плагина автодополнения.
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

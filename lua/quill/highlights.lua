@@ -1,10 +1,10 @@
--- lua/vague/highlights.lua
+-- lua/quill/highlights.lua
 
 -- Главный модуль, отвечающий за применение всех highlight-групп colorscheme.
 -- Собирает все группы из папки `groups/` и применяет их через nvim_set_hl().
 
-local curr_internal_conf = require("vague.config.internal").current
-local groups = require("vague.groups")
+local curr_internal_conf = require("quill.config.internal").current
+local groups = require("quill.groups")
 
 local M = {}
 

@@ -1,10 +1,10 @@
--- lua/vague/groups/vim-better-whitespace.lua
+-- lua/quill/groups/vim-better-whitespace.lua
 
 -- Подсветка для плагина vim-better-whitespace (подсвечивает лишние пробелы в конце строк).
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

@@ -1,17 +1,17 @@
--- lua/vague/groups/init.lua
+-- lua/quill/groups/init.lua
 
 -- Центральный реестр (index) всех групп подсветки.
 -- Именно здесь собираются highlight-группы из всех отдельных файлов.
 --
 -- Этот файл используется в highlights.lua для загрузки всех определений цветов.
 
-local curr_internal_conf = require("vague.config.internal").current
+local curr_internal_conf = require("quill.config.internal").current
 
 -- Вспомогательная функция для удобной загрузки групп.
 -- Принимает имя файла (без .lua) и вызывает get_colors() из соответствующего модуля.
 ---@param group string
 local function init(group)
-  return require("vague.groups." .. group).get_colors(curr_internal_conf)
+  return require("quill.groups." .. group).get_colors(curr_internal_conf)
 end
 
 -- Список всех поддерживаемых групп подсветки.

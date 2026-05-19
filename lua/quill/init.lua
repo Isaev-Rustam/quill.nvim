@@ -1,13 +1,13 @@
--- lua/vague/init.lua
+-- lua/quill/init.lua
 
--- Главный входной модуль colorscheme "vague".
+-- Главный входной модуль colorscheme "quill".
 -- Здесь находится публичный API: setup(), get_palette() и внутренняя функция _colorscheme().
 
-local internal_conf = require("vague.config.internal")
+local internal_conf = require("quill.config.internal")
 
 local M = {}
 
----@param user_opts? VagueColorscheme.Config
+---@param user_opts? QuillColorscheme.Config
 M.setup = function(user_opts)
   -- Применяем пользовательские настройки (цвета, transparent, bold, italic и т.д.)
   if user_opts then
@@ -29,7 +29,7 @@ end
 --- Under the hood, |:colorscheme| is just using |:highlight GroupName ...| over every highlight group it knows about.
 --- so this function is the equivalent to calling |:colorscheme| so use that instead
 M._colorscheme = function()
-  -- Основная функция, которая вызывается при `:colorscheme vague`
+  -- Основная функция, которая вызывается при `:colorscheme quill`
 
   -- Очищаем предыдущие highlight'ы
   vim.cmd("highlight clear")
@@ -38,13 +38,13 @@ M._colorscheme = function()
   end
 
   -- Устанавливаем имя colorscheme
-  vim.g.colors_name = "vague"
+  vim.g.colors_name = "quill"
 
   -- Применяем все highlight-группы
-  require("vague.highlights").set_highlights()
+  require("quill.highlights").set_highlights()
 
   -- Применяем цвета для встроенного терминала (terminal_color_*)
-  require("vague.terminal").set_highlights()
+  require("quill.terminal").set_highlights()
 end
 
 return M

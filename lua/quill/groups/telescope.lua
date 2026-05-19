@@ -1,10 +1,10 @@
--- lua/vague/groups/telescope.lua
+-- lua/quill/groups/telescope.lua
 
 -- Подсветка для Telescope.nvim — классического fuzzy-finder'а.
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

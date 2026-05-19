@@ -1,10 +1,10 @@
--- lua/vague/config/meta.lua
+-- lua/quill/config/meta.lua
 
 -- Файл с Type Annotations (типами) для colorscheme'а.
 -- Нужен для удобства и подсказок при конфигурации в Neovim (Lua LSP).
 
 -- Причина существования двух файлов (meta.lua + internal.lua):
--- Чтобы при использовании require("vague").setup({}) не было раздражающих
+-- Чтобы при использовании require("quill").setup({}) не было раздражающих
 -- предупреждений от Lua LSP о "missing fields".
 -- Да, приходится поддерживать два файла, но это сильно повышает удобство.
 
@@ -13,7 +13,7 @@
 -- ================================================================
 -- Цветовая палитра (можно переопределять пользователем)
 -- ================================================================
----@class VagueColorscheme.colors
+---@class QuillColorscheme.colors
 ---@field bg?          string   -- Основной фон редактора
 ---@field inactiveBg?  string   -- Фон неактивных окон, tabline, statusline
 ---@field fg?          string   -- Основной цвет текста
@@ -41,14 +41,14 @@
 -- ================================================================
 -- Основная конфигурация плагина
 -- ================================================================
----@class VagueColorscheme.Config
+---@class QuillColorscheme.Config
 ---@field transparent?   boolean                          -- Прозрачный фон
 ---@field bold?          boolean                          -- Использовать жирный текст
 ---@field italic?        boolean                          -- Использовать курсив
----@field colors?        VagueColorscheme.colors          -- Переопределение цветов
----@field on_highlights? fun(highlights: table<string, vim.api.keyset.highlight>, colors: VagueColorscheme.InternalConfig.colors)
+---@field colors?        QuillColorscheme.colors          -- Переопределение цветов
+---@field on_highlights? fun(highlights: table<string, vim.api.keyset.highlight>, colors: QuillColorscheme.InternalConfig.colors)
 --                   ^ Хук для тонкой настройки любой highlight-группы
 
 -- Глобальная переменная для конфигурации (можно задать до загрузки темы)
----@type VagueColorscheme.Config | fun():VagueColorscheme.Config | nil
-vim.g.vague_colorscheme = vim.g.vague_colorscheme
+---@type QuillColorscheme.Config | fun():QuillColorscheme.Config | nil
+vim.g.quill_colorscheme = vim.g.quill_colorscheme

@@ -1,11 +1,11 @@
--- lua/vague/groups/fzf-lua.lua
+-- lua/quill/groups/fzf-lua.lua
 
 -- Подсветка для fzf-lua — современного и очень быстрого fuzzy finder.
 -- Один из самых популярных плагинов для поиска файлов, grep, buffers и т.д.
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

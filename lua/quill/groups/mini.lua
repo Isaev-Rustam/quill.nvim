@@ -1,11 +1,11 @@
--- lua/vague/groups/mini.lua
+-- lua/quill/groups/mini.lua
 
 -- Подсветка для плагина mini.nvim
 -- (mini.statusline, mini.diff, mini.pick и другие модули)
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

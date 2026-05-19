@@ -1,11 +1,11 @@
--- lua/vague/groups/dashboard.lua
+-- lua/quill/groups/dashboard.lua
 
 -- Подсветка для Dashboard (alpha.nvim / dashboard-nvim и подобных плагинов).
 -- Это экран приветствия, который появляется при запуске Neovim без файлов.
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

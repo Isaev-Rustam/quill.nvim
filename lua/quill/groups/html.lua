@@ -1,11 +1,11 @@
--- lua/vague/groups/html.lua
+-- lua/quill/groups/html.lua
 
 -- Подсветка для HTML (и частично для XML, JSX, TSX).
 -- Эти группы используются как встроенным Treesitter, так и LSP.
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

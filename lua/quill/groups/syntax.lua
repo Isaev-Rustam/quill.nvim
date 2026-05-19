@@ -1,11 +1,13 @@
--- lua/vague/groups/syntax.lua
+-- lua/quill/groups/syntax.lua
 
 -- Базовая подсветка синтаксиса (Vim highlight groups).
 -- Это фундаментальная группа, которая используется большинством языков программирования.
 
+-- ВАЖНО: Treesitter-группы при несрабатывании падают сюда.
+
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors
@@ -21,38 +23,38 @@ M.get_colors = function(conf)
 
     -- Ключевые слова и управляющие конструкции
     Keyword         = { fg = c.keyword },
-    Conditional     = { fg = c.keyword },     -- if, else, switch
-    Repeat          = { fg = c.keyword },     -- for, while, do
-    Exception       = { fg = c.keyword },     -- try, catch, throw
+    Conditional     = { fg = c.keyword },       -- if, else, switch
+    Repeat          = { fg = c.keyword },       -- for, while, do
+    Exception       = { fg = c.keyword },       -- try, catch, throw
     Statement       = { fg = c.keyword },
     Label           = { fg = c.keyword },
 
     -- Функции и идентификаторы
     Function        = { fg = c.func },
-    Identifier      = { fg = c.constant },
-    Constant        = { fg = c.constant },
-    Macro           = { fg = c.constant },
+    Identifier      = { fg = c.fg },
+    Constant        = { fg = c.constant, bold = conf.bold },
+    Macro           = { fg = c.string },        -- макросы → лавандовый, отличен от констант
 
     -- Типы и структуры
-    Type            = { fg = c.type },
-    Structure       = { fg = c.constant },
-    StorageClass    = { fg = c.constant },    -- static, register, volatile
-    Typedef         = { fg = c.constant },
+    Type            = { fg = c.constant, italic = conf.italic },  -- фиолетовый italic (не сливается с fg)
+    Structure       = { fg = c.constant, italic = conf.italic },  -- Map, Array, класс
+    StorageClass    = { fg = c.keyword },
+    Typedef         = { fg = c.type, italic = conf.italic },
 
     -- Операторы и пунктуация
     Operator        = { fg = c.operator },
     Delimiter       = { fg = c.fg },
 
     -- Preprocessor / Компиляторные директивы
-    PreProc         = { fg = c.constant },
-    Include         = { fg = c.keyword },
-    Define          = { fg = c.comment },
-    PreCondit       = { fg = c.comment },
+    PreProc         = { fg = c.builtin },       -- встроенные директивы → бирюзовый
+    Include         = { fg = c.keyword },       -- #include, import
+    Define          = { fg = c.comment },       -- #define
+    PreCondit       = { fg = c.comment },       -- #ifdef, #endif
 
     -- Специальные элементы
     Special         = { fg = c.builtin },
     SpecialChar     = { fg = c.keyword },
-    Tag             = { fg = c.builtin },     -- HTML/JSX теги и т.п.
+    Tag             = { fg = c.builtin },       -- HTML/JSX теги
 
     -- Комментарии
     Comment         = { fg = c.comment, italic = conf.italic },

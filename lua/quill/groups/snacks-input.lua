@@ -1,10 +1,10 @@
--- lua/vague/groups/snacks-input.lua
+-- lua/quill/groups/snacks-input.lua
 
 -- Подсветка для Snacks.nvim Input (всплывающее окно ввода, используется в командах поиска, фильтрации и т.д.).
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

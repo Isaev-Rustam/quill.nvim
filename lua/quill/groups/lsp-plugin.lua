@@ -1,4 +1,4 @@
--- lua/vague/groups/lsp-plugin.lua
+-- lua/quill/groups/lsp-plugin.lua
 
 -- Подсветка для LSP-плагинов и диагностики.
 -- Здесь находятся группы, которые используются:
@@ -8,7 +8,7 @@
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

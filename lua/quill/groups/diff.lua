@@ -1,4 +1,4 @@
--- lua/vague/groups/diff.lua
+-- lua/quill/groups/diff.lua
 
 -- Подсветка для diff'ов — изменений кода.
 -- Используется в:
@@ -8,7 +8,7 @@
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

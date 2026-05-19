@@ -1,11 +1,11 @@
--- lua/vague/groups/modes.lua
+-- lua/quill/groups/modes.lua
 
 -- Подсветка для плагина modes.nvim
 -- Плагин меняет цвет курсора и строки в зависимости от режима редактирования.
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

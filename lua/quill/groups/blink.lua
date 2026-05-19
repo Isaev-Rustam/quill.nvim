@@ -1,10 +1,10 @@
--- lua/vague/config/meta.lua
+-- lua/quill/config/meta.lua
 
 -- Подсветка для Blink.cmp (современный автодополнялки, замена nvim-cmp)
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

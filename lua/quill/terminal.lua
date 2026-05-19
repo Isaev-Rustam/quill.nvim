@@ -1,9 +1,9 @@
--- lua/vague/terminal.lua
+-- lua/quill/terminal.lua
 
 -- Настройка цветов для встроенного терминала Neovim (vim.g.terminal_color_*).
 -- Эти цвета используются в :terminal, lazygit, toggleterm, run-кодом и т.д.
 
-local curr_internal_conf = require("vague.config.internal").current
+local curr_internal_conf = require("quill.config.internal").current
 
 local M = {}
 

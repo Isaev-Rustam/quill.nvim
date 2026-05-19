@@ -1,10 +1,10 @@
--- lua/vague/groups/rainbow-delimiters.lua
+-- lua/quill/groups/rainbow-delimiters.lua
 
 -- Подсветка Rainbow Delimiters — разноцветные скобки для лучшей читаемости вложенного кода.
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   local c = conf.colors

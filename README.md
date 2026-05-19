@@ -1,14 +1,14 @@
 <div align="center">
-  <img height="80" alt="icon" src="https://github.com/vague-theme/vague/blob/main/assets/icon.png?raw=true" />
-  <h1>Vague for Neovim</h1>
+  <img height="80" alt="icon" src="https://github.com/quill-theme/quill/blob/main/assets/icon.png?raw=true" />
+  <h1>quill for Neovim</h1>
   <img alt="Preview" src="https://github.com/user-attachments/assets/8145d76e-3040-4bee-b6bf-3c65140f4786" />
 </div>
 
 ## Installation
 
 ```lua
-vim.pack.add({ 'https://github.com/vague-theme/vague.nvim' })
-vim.cmd.colorscheme('vague')
+vim.pack.add({ 'https://github.com/quill-theme/quill.nvim' })
+vim.cmd.colorscheme('quill')
 ```
 
 ## Configuration
@@ -16,7 +16,7 @@ vim.cmd.colorscheme('vague')
 Calling `setup()` is optional.
 
 ```lua
-require('vague').setup({
+require('quill').setup({
   transparent = false, -- If true, background is not set
   bold = true, -- Disable bold globally
   italic = true, -- Disable italic globally
@@ -66,4 +66,4 @@ end
 
 ## Extras
 
-Extra color configs for other tools can be found in [GitHub organization](https://github.com/vague-theme).
+Extra color configs for other tools can be found in [GitHub organization](https://github.com/quill-theme).

@@ -1,11 +1,11 @@
--- lua/vague/groups/snacks-picker.lua
+-- lua/quill/groups/snacks-picker.lua
 
 -- Подсветка для Snacks Picker — мощного универсального picker'а из Snacks.nvim
 -- (поиск файлов, grep, git status, buffers, diagnostics и т.д.)
 
 local M = {}
 
----@param conf VagueColorscheme.InternalConfig
+---@param conf QuillColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
   -- stylua: ignore
